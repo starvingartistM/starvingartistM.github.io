@@ -7,15 +7,25 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <a href="https://online-school-progress.ru/" class="headerleft">
+            <img class="headerlogo" src="css/progress.png">
+            <p class="headername">ОНЛАЙН-ШКОЛА</p>
+        </a>
+        <div class="headerright">
+            <a href="#kurs" id="menuPC">О КУРСЕ</a>
+            <a href="#faq" id="menuPC">FAQ</a>
+            <a href="#price" id="menuPC">ЦЕНЫ</a>
+        </div>
+    </header>
     <div class="blok1">
         <div class="trapezium"></div>
         <div class="triangle1"></div>
         <div class="triangle2"></div>
         <div class="container1">
-            <div class="Button1form">
+            <a href="#price" class="Button1form">
                 <h1 class="Записаться">Записаться</h1>
-            </div>        
+            </a>        
         </div>
         <h2 class="blok1text1">2 часть <span>на максимум</span></h2>
         <h2 class="blok1text2">Пошаговое обучение навыкам <span>грамотного решения</span> задач</h2>
@@ -47,10 +57,21 @@
             <h2 id="blok3Text" class="blok3TextRT">владеть<br><span id="blok3TextSpan">нужной<br>теорией</span></h2>
             <h2 id="blok3Text" class="blok3TextRB">работать<br><span id="blok3TextSpan">с алгоритмами<br>решения</span></h2>
         </div>
-        <img class="blok3artPhone" src="css/blok3artPhone.png">
+        <div class="blok3artPhone">
+            <div class="blok3center">
+                <h2 class="blok3centerText">4</h2>
+                <h2 class="blok3centerText1">основных</h2>
+                <h2 class="blok3centerText2">навыка</h2>
+                <h2 class="blok3centerText3">чтобы решать трудные задачи <br> и получать максимальные баллы</h2>
+            </div>
+            <h2 id="blok3Text" class="blok3TextLT">формулировать<br><span id="blok3TextSpan">мысли<br>правильно</span></h2>
+            <h2 id="blok3Text" class="blok3TextLB">строить<br><span id="blok3TextSpan">логические<br>решения</span></h2>
+            <h2 id="blok3Text" class="blok3TextRT">владеть<br><span id="blok3TextSpan">нужной<br>теорией</span></h2>
+            <h2 id="blok3Text" class="blok3TextRB">работать<br><span id="blok3TextSpan">с алгоритмами<br>решения</span></h2>
+        </div>
     </div>
     <div class="blok4">
-        <div class="container4">
+        <div id="kurs" class="container4">
             <div class="container4BlokBot">
                 <ul class="container4BlokBotText">
                     <li id="container4BlokBotDot" class="container4BlokBotText1">лекции сопровождаются наглядными презентациями</li>
@@ -144,23 +165,29 @@
     </div>
     <div class="blok7">
         <div class="container7blok1">
-            <div class="FAQ">
+            <div id="faq" class="FAQ">
                 <div class="FAQfigure1">
                     <h2 id="FAQelem1" class="FAQfigure1Text">Могу ли я оплатить частями?</h2>
-                    <img id="FAQelem2" class="FAQfigure1Plus" src="css/FAQplus.png">
+                    <a href="#">
+                        <img id="FAQelem2" class="FAQfigure1Plus" src="css/FAQplus.png">
+                    </a>    
                 </div>
                 <div class="FAQfigure2">
                     <div id="FAQelem1" class="FAQfigure2Text">подойдёт ли мне курс, если я полный ноль?</div>
-                    <img id="FAQelem2" class="FAQfigure2Plus" src="css/FAQplus.png">
+                    <a href="#">
+                        <img id="FAQelem2" class="FAQfigure2Plus" src="css/FAQplus.png">
+                    </a>    
                 </div>
                 <div class="FAQfigure3">
                     <div id="FAQelem1" class="FAQfigure3Text">Что, если я не смогу прийти на занятие?</div>
-                    <img id="FAQelem2" class="FAQfigure3Plus" src="css/FAQplus.png">
+                    <a href="#">
+                        <img id="FAQelem2" class="FAQfigure3Plus" src="css/FAQplus.png">
+                    </a>
                 </div>
             </div>
         </div>
         <h2 class="container7blok2name">Стоимость обучения</h2>
-        <div class="container7blok2">
+        <div id="price" class="container7blok2">
             <div class="container7blok2left">
                 <div class="MainForm1Bkg">
                     <div class="MainForm1">
@@ -181,11 +208,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="MainForm1ButtonBkg">
+                <a href="#" class="MainForm1ButtonBkg">
                     <div class="MainForm1Button">
                         <h2 class="MainForm1ButtonText">Записаться</h2>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="container7blok2right">
                 <div class="MainForm2Bkg">
@@ -249,5 +276,46 @@
             </div>
         </div>
     </footer>
+    <div class="FAQpopup_bg1">
+        <div class="FAQ1popup">
+            <img class="closePopup1" src="css/closepopup.png">
+            <p class="FAQ1popup_txt">ничего страшного! Ведь ты всегда сможешь пересмотреть его в записи и задать вопросы наставнику</p>
+        </div>
+    </div> 
+    <div class="FAQpopup_bg2"> 
+        <div class="FAQ2popup">
+            <img class="closePopup2" src="css/closepopup.png">
+            <p class="FAQ2popup_txt">да! Курс подходит и тем, кто ещё ничего не умеет, и тем, кто уже умеет работать с трудными задачами</p>
+        </div>
+    </div>
+    <div class="FAQpopup_bg3"> 
+        <div class="FAQ3popup">
+            <img class="closePopup3" src="css/closepopup.png">
+            <p class="FAQ3popup_txt">Да! ты можешь оплачивать частями без всяких процентов</p>
+        </div>
+    </div>
+    <div class="FormaPopUp_bg">
+        <div class="FormaPopUp">
+            <div class="FormaPopUpTop"></div>
+            <img class="closeForm" src="css/closepopup.png">
+            <form action="telegram.php" method="post" class="FormaPopUpInput">
+                <p class="FormaText">Записаться на курс со скидкой</p>
+                <div class="input1">
+                    <label for>Имя</label>
+                    <input type="text" class="formName" id name="user_name" placeholder=" Например, Даня">
+                </div>
+                <div class="input2">
+                    <label for>Номер телефона</label>
+                    <input type="text" class="formPhone" id name="user_phone" placeholder=" +7 (999) 99 99 999">
+                </div>
+                <div class="input3">
+                    <label for>Электронная почта</label>
+                    <input type="text" class="formMail" id name="user_email" placeholder=" mail@mail.ru">
+                </div>
+                <button type="submit" class="button">записаться</button>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
