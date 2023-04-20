@@ -298,7 +298,7 @@
         <div class="FormaPopUp">
             <div class="FormaPopUpTop"></div>
             <img class="closeForm" src="css/closepopup.png">
-            <form action="telegram.php" method="post" class="FormaPopUpInput">
+            <form id="FormaPopUpInput">
                 <p class="FormaText">Записаться на курс со скидкой</p>
                 <div class="input1">
                     <label for>Имя</label>
@@ -317,5 +317,28 @@
         </div>
     </div>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        const TOKEN = "6195395574:AAFyyg1YHXytM80Ac2r0sbIiQ_zogplQ5ik";
+        const CHAT_ID = "-823382755";
+        const URL_API = `https://api.telegram.org/bot${ TOKEN }/sendmessage`; 
+
+        document.getElementById('FormaPopUpInput').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            let message = `<b>Заявка WAY UP<b>\n`;
+            message += `<b>Имя: <b> ${this.user_name.value}\n`;
+                message += `<b>Телефон: <b> ${this.user_phone.value}\n`;
+                    message += `<b>Имя: <b> ${this.user_email.value}`;
+             
+            axios.post(URL_API, {
+                chat_id: CHAT_ID,
+                parse_mode: 'html',
+                text: message
+            })             
+        })
+
+    </script>
 </body>
 </html>
